@@ -1,0 +1,87 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, Caveat, sans-serif;
+  display: flex;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+main header,
+nav header {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+/* Nav */
+nav {
+  border-right: 2px solid #fff;
+  width: 1400px;
+}
+
+nav header {
+  padding: 15px;
+  background: salmon;
+}
+
+nav a {
+  display: block;
+  border-top: 1px solid #fff;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background: #333;
+}
+
+nav a::hover {
+  display: block;
+  border-top: 1px solid rgb(255, 136, 0);
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(255, 136, 0);
+}
+
+/* Main */
+main {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 500px;
+}
+
+code pre {
+  background-color: #eee;
+  padding: 20px;
+}
+h1 {
+  fonts-family: Caveat, sans-serif;
+  color: red;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 576px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav {
+    border-bottom: 3px solid #333;
+    overflow-y: scroll;
+    height: 300px;
+  }
+
+  main {
+    overflow-y: unset;
+  }
+}
